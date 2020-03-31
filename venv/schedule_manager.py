@@ -1,8 +1,11 @@
+# schedule_manager.py
+# The ScheduleManager class will hold all the information regarding who is available at what time for each day.
 
-def do_nothing():
-    print(f'It\'s ok to do nothing!')
+class ScheduleManager:
+    days = []
 
-class ScheduleManager():
     def __init__(self):
-        do_nothing()
+        days = ((),) * 7
 
+    def add_user_availability(self, user, day, timeframe):
+        # Figure this out...
